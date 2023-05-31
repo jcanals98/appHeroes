@@ -1,0 +1,66 @@
+<h1>
+  Editar / Agregar
+  héroe
+  <small>superman</small>
+</h1>
+<mat-divider class="mt-2"></mat-divider>
+<div class="grid">
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <mat-card-content>
+        <div class="grid">
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>Super herore</mat-label>
+            <input
+              matInput
+              type="text"
+              required="">
+          </mat-form-field>
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>SAltert</mat-label>
+            <input
+              matInput
+              type="text"
+              required="">
+          </mat-form-field>
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>primer aparicion</mat-label>
+            <input
+              matInput
+              type="text"
+              required="">
+          </mat-form-field>
+          <mat-form-field class="col-12 sm:col-6">
+            <mat-label>personajes</mat-label>
+            <input
+              matInput
+              type="text"
+              required="">
+          </mat-form-field>
+          <mat-form-field class="col-12 sm:col-6">
+           <mat-select required="">
+            <mat-option *ngFor="let publisher of publishers">{{publisher.value}}</mat-option>
+           </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="flex justify-content-between">
+          <button
+            mat-flat-button
+            color="warn">
+            Borrar
+          </button>
+          <button
+            mat-flat-button
+            color="primary">
+            Guardar
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <img [src]="" alt="iamgen del heroe" mat-card-image>
+    </mat-card>
+  </div>
+</div>
